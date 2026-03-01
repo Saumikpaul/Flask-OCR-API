@@ -22,3 +22,6 @@ jobs:
     - name: Run tests
       run: |
         pytest
+    - name: Docker Build Validation
+      run: |
+        docker build . --file Dockerfile --tag python-app:latest
